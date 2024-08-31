@@ -1,0 +1,35 @@
+#shop {
+    margin-top: 30px;
+}
+
+#buy-plop-clicker {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#plop-clickers-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plop-clicker {
+    margin: 10px;
+}
+
+.plop-clicker img {
+    width: 100px;
+    height: 100px;
+    animation: plop-animation 1s infinite;
+}
+
+@keyframes plop-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
