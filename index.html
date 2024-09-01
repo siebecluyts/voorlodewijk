@@ -8,19 +8,46 @@
 </head>
 <body>
     <div id="game">
-        <h1>Plopkoek Clicker</h1>
-        <div id="plopkoek-container">
-            <img id="plopkoek" src="images/plopkoek.png" alt="Plopkoek">
-        </div>
-        <p>Plopkoeken verzameld: <span id="score">0</span></p>
-        <div id="shop">
-            <h2>Shop</h2>
-            <button id="buy-plop-clicker">Koop Plop Clicker (kosten: 50 Plopkoeken)</button>
-            <p>Plop Clickers gekocht: <span id="plop-clickers">0</span></p>
-        </div>
-        <div id="plop-clickers-container">
-            <!-- Hier komen de Plop Clickers -->
-        </div>
+        <header>
+            <h1>Plopkoek Clicker</h1>
+            <p>Plopkoeken verzameld: <span id="score">0</span></p>
+        </header>
+
+        <main>
+            <div id="plopkoek-container">
+                <img id="plopkoek" src="images/plopkoek.png" alt="Plopkoek">
+            </div>
+
+            <!-- Nieuwe container voor Plop Clickers -->
+            <div id="plop-clicker-container"></div>
+
+            <section id="shop">
+                <h2>Shop</h2>
+                
+                <!-- Bestaande items -->
+                <button id="buy-plop-clicker" class="shop-button">Koop Plop Clicker<br>(Kosten: 50 Plopkoeken)</button>
+                <p>Plop Clickers gekocht: <span id="plop-clickers">0</span></p>
+                
+                <button id="buy-double-click" class="shop-button">Koop Dubbele Klikkracht<br>(Kosten: 100 Plopkoeken)</button>
+                <p>Klikkracht: <span id="click-power">1</span>x</p>
+            
+                <button id="buy-auto-collector" class="shop-button">Koop Automatische Verzamelaar<br>(Kosten: 200 Plopkoeken)</button>
+                <p>Automatische Verzamelaars: <span id="auto-collectors">0</span></p>
+            
+                <button id="buy-oven" class="shop-button">Koop Plopkoek Oven<br>(Kosten: 500 Plopkoeken)</button>
+                <p>Ovens: <span id="ovens">0</span></p>
+                
+                <!-- Nieuwe Ultra Plop Kliker optie -->
+                <button id="buy-ultra-plop-clicker" class="shop-button">Koop Ultra Plop Kliker<br>(Kosten: 1000 Plopkoeken)</button>
+                <p>Ultra Plop Kliker: <span id="ultra-plop-clickers">0</span></p>
+            </section>
+            
+            
+        </main>
+
+        <footer>
+            <p>Veel plezier met Plopkoeken verzamelen!</p>
+        </footer>
     </div>
 
     <script src="script.js"></script>
