@@ -1,0 +1,115 @@
+/* Algemeen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Zorg ervoor dat het hele scherm wordt gebruikt */
+    overflow: hidden; /* Voorkomt scrollbalken als het scherm kleiner is */
+}
+
+#game {
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 95%;
+    max-width: 500px; /* Beperk de breedte voor kleinere schermen */
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto; /* Zorg ervoor dat je kunt scrollen als de inhoud te groot is */
+    max-height: 100%; /* Beperk de hoogte tot het schermformaat */
+}
+
+/* Headerstijl */
+header h1 {
+    font-size: 2rem; /* Verklein de tekst als de ruimte beperkt is */
+    color: #8b0000;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem; /* Iets kleinere tekst voor de score */
+    color: #555;
+}
+
+/* Plopkoek containerstijl */
+#plopkoek-container {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 150px; /* Maak de Plopkoek kleiner voor mobiele schermen */
+    height: auto;
+    position: relative;
+}
+
+#plopkoek {
+    width: 100%;
+    height: auto; /* Houd de verhoudingen intact */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#plopkoek:hover {
+    transform: scale(1.05);
+}
+
+/* Plop Clicker container */
+#plop-clicker-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Shop sectie */
+#shop {
+    margin-top: 20px;
+}
+
+.shop-button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 1rem; /* Verklein de tekst als de ruimte beperkt is */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.shop-button:hover {
+    background-color: #e64a19;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    font-size: 0.9rem; /* Kleiner lettertype voor kleinere schermen */
+    color: #777;
+}
+
+/* Plop Clicker stijl en animatie */
+.plop-clicker img {
+    width: 40px; /* Maak de Plop Clickers iets kleiner */
+    height: 40px;
+    animation: plop-animation 1s infinite;
+    transform-origin: center;
+}
+
+@keyframes plop-animation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
